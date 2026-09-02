@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armando's Custom Window Tint | Window Tint &amp; PPF in Las Vegas, NV</title>
+<meta name="description" content="Automotive window tint, paint protection film, and residential tint in Las Vegas and Henderson. By appointment. Call 702-292-9854.">
+<link rel="canonical" href="https://www.lasvegaswindowtintnv.com/">
+
+<meta property="og:title" content="Armando's Custom Window Tint | Las Vegas, NV">
+<meta property="og:description" content="Window tint and paint protection film in Las Vegas and Henderson. By appointment.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.lasvegaswindowtintnv.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --glass-dark:#161C20;
+    --glass-mid:#243036;
+    --slate:#8D9AA1;
+    --light:#EDEFF0;
+    --muted:#AEB9BF;
+    --sun:#E8A33D;
+    --sun-deep:#C8791C;
+    --hair:rgba(237,239,240,.12);
+    --maxw:1080px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important}
+  }
+
+  body{
+    font-family:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    background:var(--glass-dark);
+    color:var(--light);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit}
+  img{display:block;max-width:100%;height:auto}
+
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  .skip{position:absolute;left:-9999px;background:var(--sun);color:#000;padding:12px 18px;font-weight:600}
+  .skip:focus{left:12px;top:12px;z-index:100}
+
+  :focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+  /* ---------- Sticky call bar ---------- */
+  .callbar{position:sticky;top:0;z-index:50;background:var(--glass-dark);border-bottom:1px solid rgba(237,239,240,.14)}
+  .callbar-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:var(--maxw);margin:0 auto}
+  .callbar-name{font-weight:800;font-size:15px;letter-spacing:-.01em;line-height:1.2}
+  .callbar-name span{display:block;font-weight:500;font-size:12px;color:var(--slate)}
+  .callbar-btn{background:var(--sun);color:#12181B;font-weight:800;font-size:15px;text-decoration:none;padding:11px 18px;border-radius:3px;white-space:nowrap}
+  .callbar-btn:hover{background:var(--sun-deep)}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(178deg,#C9CFD2 0%,#8C979D 22%,#4E5D66 48%,#26333A 74%,var(--glass-dark) 100%);
+    padding:64px 0 56px;
+  }
+  .hero h1{font-size:clamp(38px,11vw,76px);font-weight:800;line-height:.98;letter-spacing:-.03em;color:#12181B;max-width:12ch}
+  .hero p{margin-top:20px;font-size:clamp(17px,4.4vw,21px);max-width:36ch;color:#F4F6F7}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn-call,.btn-text{display:inline-block;text-decoration:none;font-weight:800;font-size:19px;padding:17px 28px;border-radius:3px}
+  .btn-call{background:var(--sun);color:#12181B}
+  .btn-call:hover{background:var(--sun-deep)}
+  .btn-text{background:transparent;color:var(--light);border:2px solid rgba(237,239,240,.5)}
+  .btn-text:hover{border-color:var(--light)}
+  .hero-note{margin-top:18px;font-size:15px;color:#CBD3D7}
+
+  /* ---------- Sections ---------- */
+  section{padding:56px 0}
+  h2{font-size:clamp(26px,6.5vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
+  .lede{color:var(--muted);max-width:52ch;margin-bottom:28px}
+
+  .services{border-top:1px solid var(--hair)}
+  .service{padding:26px 0;border-bottom:1px solid var(--hair)}
+  .service h3{font-size:23px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+  .service p{color:var(--muted);max-width:56ch}
+
+  /* ---------- Who ---------- */
+  .who{background:var(--glass-mid)}
+  .who p{font-size:clamp(18px,4.6vw,22px);max-width:44ch;line-height:1.45}
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+  .gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+
+  /* ---------- Review ---------- */
+  .review{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .review blockquote{font-size:clamp(19px,5vw,26px);font-weight:500;line-height:1.4;max-width:34ch;letter-spacing:-.01em}
+  .review cite{display:block;margin-top:18px;font-style:normal;font-size:16px;color:var(--slate)}
+
+  /* ---------- Steps ---------- */
+  .step{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--hair)}
+  .step:last-child{border-bottom:none}
+  .step-num{flex:0 0 auto;font-size:30px;font-weight:800;color:var(--sun);line-height:1;width:38px}
+  .step h3{font-size:19px;font-weight:600;margin-bottom:4px}
+  .step p{color:var(--muted);font-size:16px}
+
+  /* ---------- Visit ---------- */
+  .visit{background:var(--glass-mid)}
+  .visit-grid{display:grid;gap:26px}
+  .visit-block h3{font-size:14px;font-weight:600;color:var(--slate);margin-bottom:6px}
+  .visit-block p{font-size:19px;line-height:1.45}
+  .visit-block a{color:var(--sun);font-weight:600}
+
+  /* ---------- Closer ---------- */
+  .closer{background:var(--sun);color:#12181B;text-align:center}
+  .closer h2{color:#12181B}
+  .closer p{max-width:40ch;margin:0 auto 26px;font-size:18px}
+  .closer .btn-call{background:#12181B;color:var(--sun);font-size:22px;padding:19px 34px}
+  .closer .btn-call:hover{background:#000}
+
+  footer{padding:34px 0 90px;font-size:15px;color:var(--slate);border-top:1px solid var(--hair)}
+  footer strong{color:var(--light);font-weight:600}
+  footer p+p{margin-top:14px}
+
+  @media (min-width:720px){
+    .hero{padding:104px 0 88px}
+    section{padding:80px 0}
+    .visit-grid{grid-template-columns:repeat(3,1fr);gap:34px}
+    .gallery-grid{grid-template-columns:repeat(4,1fr)}
+    .callbar-name{font-size:17px}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===== Sticky call bar ===== -->
+<div class="callbar">
+  <div class="callbar-inner">
+    <div class="callbar-name">
+      Armando's Custom Window Tint
+      <span>Las Vegas &amp; Henderson &middot; By appointment</span>
+    </div>
+    <a class="callbar-btn" href="tel:+17022929854">Call now</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>Vegas sun stays outside.</h1>
+      <p>Window tint and paint protection film, installed by appointment in Las Vegas and Henderson.</p>
+      <div class="hero-actions">
+        <a class="btn-call" href="tel:+17022929854">Call 702-292-9854</a>
+        <a class="btn-text" href="sms:+17022929854">Send a text</a>
+      </div>
+      <p class="hero-note">Tell me your year, make, and model and what you want done.</p>
+    </div>
+  </header>
+
+  <!-- ===== Services ===== -->
+  <section class="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="lede">Patterns cut to your exact vehicle, so the film fits the glass instead of getting close.</p>
+
+      <div class="service">
+        <h3>Automotive window tint</h3>
+        <p>Film applied to your vehicle's glass to cut heat and glare and keep the interior
+           from baking. Anything from a light film to the darkest look you want.</p>
+      </div>
+
+      <div class="service">
+        <h3>Paint protection film</h3>
+        <p>Clear film over your paint that takes the rock chips, sand, and road debris
+           instead of your finish. Partial or full coverage.</p>
+      </div>
+
+      <div class="service">
+        <h3>Old tint removal</h3>
+        <p>Failed, purple, or bubbling film taken off without damaging your door panels,
+           defroster lines, or glass. Proper removal is what makes a re-tint come out right.</p>
+      </div>
+
+      <div class="service">
+        <h3>Residential window tint</h3>
+        <p>Tint for your home's windows to bring down cooling bills and keep the afternoon
+           sun off your furniture and floors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Who ===== -->
+  <section class="who">
+    <div class="wrap">
+      <h2>Armando and Irma</h2>
+      <p>Between us we have over 50 years in the Las Vegas automobile industry. Every
+         vehicle gets installed by one of us — not handed off.</p>
+    </div>
+  </section>
+
+  <!-- ===== Gallery =====
+       NOTE: these photos load from your current WordPress site. If you ever take
+       WordPress down, download them first and swap these links for local files. -->
+  <section>
+    <div class="wrap">
+      <h2>Recent work</h2>
+      <p class="lede">A few vehicles that came through the shop.</p>
+      <div class="gallery-grid">
+        <img src="https://www.lasvegaswindowtintnv.com/wp-content/uploads/2022/05/DSC00336-1024x807.jpg"
+             alt="Ferrari 430 with window tint installed" loading="lazy">
+        <img src="https://www.lasvegaswindowtintnv.com/wp-content/uploads/2022/05/IMG_4131-scaled-boost-1024x768.jpg"
+             alt="Porsche with freshly installed window tint" loading="lazy">
+        <img src="https://www.lasvegaswindowtintnv.com/wp-content/uploads/2021/07/DSC00115-2-1024x683.jpg"
+             alt="Tesla Model Y parked outside the shop" loading="lazy">
+        <img src="https://www.lasvegaswindowtintnv.com/wp-content/uploads/2022/05/IMG_4636-1024x768.jpg"
+             alt="Vehicle after window tint installation" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Review ===== -->
+  <section class="review">
+    <div class="wrap">
+      <blockquote>Only window tinter I trust. He definitely knows what he is doing no
+        matter what vehicle I bring him. No complaints, no bubbles, no hassle.</blockquote>
+      <cite>Jason G.</cite>
+    </div>
+  </section>
+
+  <!-- ===== How it works ===== -->
+  <section>
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="lede">Appointment only, so your vehicle gets the whole bay.</p>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Call or text</h3>
+          <p>Give us your vehicle and what you're after. We'll quote you and pick a time.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Bring it in</h3>
+          <p>Drop the vehicle off at your appointment time.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Pick it up</h3>
+          <p>We'll walk you through the care instructions before you drive off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Visit ===== -->
+  <section class="visit">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <div class="visit-grid">
+
+        <div class="visit-block">
+          <h3>Phone</h3>
+          <p><a href="tel:+17022929854">702-292-9854</a></p>
+        </div>
+
+        <div class="visit-block">
+          <h3>Email</h3>
+          <p><a href="mailto:only1mando@gmail.com">only1mando@gmail.com</a></p>
+        </div>
+
+        <div class="visit-block">
+          <h3>Hours</h3>
+          <p>By appointment</p>
+        </div>
+
+        <div class="visit-block">
+          <h3>Serving</h3>
+          <p>Las Vegas &amp; Henderson</p>
+        </div>
+
+        <div class="visit-block">
+          <h3>Reviews</h3>
+          <p><a href="https://www.yelp.com/biz/armandos-custom-window-tint-las-vegas"
+                target="_blank" rel="noopener">Yelp</a></p>
+        </div>
+
+        <div class="visit-block">
+          <h3>Google</h3>
+          <p><a href="https://g.page/armando-s-custom-window-tint"
+                target="_blank" rel="noopener">Our listing</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Closer ===== -->
+  <section class="closer">
+    <div class="wrap">
+      <h2>Ready to book?</h2>
+      <p>Call or text and we'll get your vehicle on the schedule.</p>
+      <a class="btn-call" href="tel:+17022929854">Call 702-292-9854</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Armando's Custom Window Tint</strong><br>
+       Las Vegas, NV &middot; By appointment<br>
+       <a href="tel:+17022929854">702-292-9854</a> &middot;
+       <a href="mailto:only1mando@gmail.com">only1mando@gmail.com</a></p>
+    <p>Nevada limits how dark vehicle window tint can legally be, and the limits differ by
+       window. Ask us and we'll go over what's allowed before we install anything.</p>
+  </div>
+</footer>
+
+<!-- Local search listing info for Google. Confirmed facts only. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoBodyShop",
+  "name": "Armando's Custom Window Tint",
+  "url": "https://www.lasvegaswindowtintnv.com/",
+  "telephone": "+1-702-292-9854",
+  "email": "only1mando@gmail.com",
+  "areaServed": ["Las Vegas, NV", "Henderson, NV"],
+  "sameAs": [
+    "https://www.yelp.com/biz/armandos-custom-window-tint-las-vegas",
+    "https://g.page/armando-s-custom-window-tint"
+  ]
+}
+</script>
+
+</body>
+</html>
