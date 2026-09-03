@@ -65,6 +65,6 @@ guesses.
 ## Note
 
 The old WordPress site at lasvegaswindowtintnv.com is still live.
-The four gallery photos in `index.html` currently hotlink to it.
-Download them into this repo before that site is ever taken down,
-then swap the `src` links to the local files.
+The four gallery photos were downloaded from it on 2026-09-02 and
+now live in `images/`. `index.html` no longer depends on the old
+site for anything.
