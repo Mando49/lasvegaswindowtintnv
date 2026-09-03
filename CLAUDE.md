@@ -10,6 +10,7 @@ only goal. Every change should make that easier, not harder.
 
 - `index.html` — the whole site. HTML, CSS, and the JSON-LD block
   all live in this one file.
+- `images/` — the four gallery photos used on the page.
 - `README.md` — one-line description. Still uses the old business
   name; that is fine to leave or update.
 
@@ -64,7 +65,6 @@ guesses.
 
 ## Note
 
-The old WordPress site at lasvegaswindowtintnv.com is still live.
-The four gallery photos were downloaded from it on 2026-09-02 and
-now live in `images/`. `index.html` no longer depends on the old
-site for anything.
+The old WordPress site at lasvegaswindowtintnv.com is still live,
+but `index.html` does not depend on it for anything. All gallery
+photos are hosted locally in `images/`.
